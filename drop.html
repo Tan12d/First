@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            font-family: fantasy;
+        }
+
+        ul {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+            list-style: none;
+            background-color: lawngreen;
+            height: 40px;
+
+            
+        }
+
+        ul li {            
+            float: left;
+            display: block;
+            
+         }
+
+         li a{
+            display: block;
+            color: blue;
+            font-size: 15px;
+            padding: 10px 12px;
+            text-decoration: none;
+            
+         }
+
+         a:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .con {
+            display: none;
+        }
+
+        .dropdown:hover .con {
+            display: block;
+           
+        }
+        </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="#">About Us</a>
+            <div class="con">
+                <a href="#">Carrer</a>
+                <a href="#">jio</a>
+                <a href="#">mio</a>
+            </div>
+        </li>
+        <li><a href="#">Place</a></li>
+        <li><a href="#">Phone</a></li>
+    </ul>
+</body>
+</html>
